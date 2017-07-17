@@ -1,0 +1,141 @@
+@import '_variables';
+
+
+body{background-color:#ccc;color:white;  font-family: 'Roboto', sans-serif; }
+main{margin:0 auto;}
+#container{min-height:175px;}
+
+@media only screen and (min-width: 900px) {
+  main {
+    width: 50%;
+  }
+}
+
+ul{list-style-type:none; margin:0; padding:0; text-align:center;}
+
+.city-name{font-size:2em; text-align:center; font-family: 'Roboto Slab', serif;}
+
+.wea-desc{text-align:center; text-transform:capitalize;}
+
+.current-temp{font-size:4em; text-align:center;font-family: 'Roboto Slab', serif;}
+
+button.myGeoBtn{width:100%;}
+ button.seaBtn, button.syrBtn{width:49.5%; display:inline;}
+
+@media only screen and (max-width: 420px) {
+ button.seaBtn, button.syrBtn{width:100%}
+}
+
+weather { display: block; }
+
+//*********************************
+//animates cloud images
+//*********************************
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+.animate-area	{
+	width: 100%;
+	height: 500px;
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	animation: animatedBackground 40s linear infinite;
+}
+
+//*********************************
+//classes for each weather description
+//*********************************
+//
+//plain blue sky
+.clear-sky{
+background-image: $boat-img, $sun;
+background-color:#7EC0EE;
+}
+
+// rainy
+.rain{
+background-image: $boat-img, $front-clouds-img, $rain-clouds-bkd;
+background-color: #B0C4DE;
+}
+
+.few-clouds{
+background-image: $boat-img, $sun, $lt-clouds-bkd;
+background-color:#ADD8E6;
+}
+
+.scattered-clouds{
+background-image: $boat-img, $front-clouds-img, $sun, $lt-clouds-bkd;
+background-color:#b3cbd1;
+}
+
+
+.cloudy{
+background-image: $boat-img, $front-clouds-img, $more-clouds-bkd;
+background-color: #b3cbd1;
+}
+
+.thunder{ background-image: $boat-img, $lightning-clouds-img, $dk-clouds-bkd;
+background-color:#999999;
+}
+
+.mist{background-image: $boat-img, $lt-clouds-bkd, $mist-clouds-bkd;
+background-color:#e2e2e2;
+}
+
+.snow{background-image: $boat-img, $front-clouds-img, $snow-clouds-bkd;
+background-color:#efefef;
+}
+
+
+
+//*********************************
+//3 buttons styles and color map using @each loop
+//*********************************
+
+button {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  display: block;
+  width:100%;
+  margin: 0.5em 0;
+  padding:1em;
+}
+
+$button-color-map: (
+  myGeoBtn: (#e7263b, #fb283f, #fb283f),
+  seaBtn: (#66cccc, #7ae4e1, #7ae4e1),
+  syrBtn: (#66cccc, #7ae4e1, #7ae4e1)
+);
+
+// set up an @each loop to go over the butt map
+// and build the relevant color styles
+@each $butt, $colors in $button-color-map {
+  .#{$butt} { // interpolating $butt into ".c"70d3d0
+    // colors are in regular, hover, active order
+    $regular: nth($colors, 1); // #3e181b
+    $hover: nth($colors, 2); // #661920
+    $active: nth($colors, 3); // #db1d2d
+
+    background-color: $regular;
+    color: white;
+
+    &:hover,
+    &:focus {
+      background-color: $hover;
+      outline-color: #FFF;
+    }
+
+    &:active {
+      background-color: $active;
+    }
+  }
+}

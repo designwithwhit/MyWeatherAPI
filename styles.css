@@ -1,0 +1,139 @@
+body {
+  background-color: #ccc;
+  color: white;
+  font-family: 'Roboto', sans-serif; }
+
+main {
+  margin: 0 auto; }
+
+#container {
+  min-height: 175px; }
+
+@media only screen and (min-width: 900px) {
+  main {
+    width: 50%; } }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+.city-name {
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Roboto Slab', serif; }
+
+.wea-desc {
+  text-align: center;
+  text-transform: capitalize; }
+
+.current-temp {
+  font-size: 4em;
+  text-align: center;
+  font-family: 'Roboto Slab', serif; }
+
+button.myGeoBtn {
+  width: 100%; }
+
+button.seaBtn, button.syrBtn {
+  width: 49.5%;
+  display: inline; }
+
+@media only screen and (max-width: 420px) {
+  button.seaBtn, button.syrBtn {
+    width: 100%; } }
+weather {
+  display: block; }
+
+@-webkit-keyframes animatedBackground {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 100% 0; } }
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 100% 0; } }
+.animate-area {
+  width: 100%;
+  height: 500px;
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  -webkit-animation: animatedBackground 40s linear infinite;
+          animation: animatedBackground 40s linear infinite; }
+
+.clear-sky {
+  background-image: url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf8c615d5dbaaaf49bd45/1500248262641/boat.png?format=750w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf8006f4ca3a637c83e9e/1500248069213/?format=750w");
+  background-color: #7EC0EE; }
+
+.rain {
+  background-image: url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf8c615d5dbaaaf49bd45/1500248262641/boat.png?format=750w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf73d914e6bd0dee8bd15/1500247886771/front-clouds.png?format=750w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf4b2cd39c3a76bf464b4/1500247225803/?format=1000w");
+  background-color: #B0C4DE; }
+
+.few-clouds {
+  background-image: url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf8c615d5dbaaaf49bd45/1500248262641/boat.png?format=750w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf8006f4ca3a637c83e9e/1500248069213/?format=750w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf4766b8f5bacd6796db0/1500247160644/less-clouds-bkd.png?format=1000w");
+  background-color: #ADD8E6; }
+
+.scattered-clouds {
+  background-image: url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf8c615d5dbaaaf49bd45/1500248262641/boat.png?format=750w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf73d914e6bd0dee8bd15/1500247886771/front-clouds.png?format=750w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf8006f4ca3a637c83e9e/1500248069213/?format=750w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf4766b8f5bacd6796db0/1500247160644/less-clouds-bkd.png?format=1000w");
+  background-color: #b3cbd1; }
+
+.cloudy {
+  background-image: url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf8c615d5dbaaaf49bd45/1500248262641/boat.png?format=750w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf73d914e6bd0dee8bd15/1500247886771/front-clouds.png?format=750w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf4586a496302302b2421/1500247130516/?format=1000w");
+  background-color: #b3cbd1; }
+
+.thunder {
+  background-image: url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf8c615d5dbaaaf49bd45/1500248262641/boat.png?format=750w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf75cff7c5001fe700da9/1500247904479/lightening-clouds.png?format=750w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf4c97131a5b5c1e066c6/1500247243795/?format=1000w");
+  background-color: #999999; }
+
+.mist {
+  background-image: url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf8c615d5dbaaaf49bd45/1500248262641/boat.png?format=750w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf4766b8f5bacd6796db0/1500247160644/less-clouds-bkd.png?format=1000w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf4586a496302302b2421/1500247130516/?format=1000w");
+  background-color: #e2e2e2; }
+
+.snow {
+  background-image: url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf8c615d5dbaaaf49bd45/1500248262641/boat.png?format=750w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf73d914e6bd0dee8bd15/1500247886771/front-clouds.png?format=750w"), url("https://static1.squarespace.com/static/556cba8ee4b072fc1ba91786/t/596bf4c07131a5b5c1e0666a/1500247236675/?format=1000w");
+  background-color: #efefef; }
+
+button {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  display: block;
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 1em; }
+
+.myGeoBtn {
+  background-color: #e7263b;
+  color: white; }
+  .myGeoBtn:hover, .myGeoBtn:focus {
+    background-color: #fb283f;
+    outline-color: #FFF; }
+  .myGeoBtn:active {
+    background-color: #fb283f; }
+
+.seaBtn {
+  background-color: #66cccc;
+  color: white; }
+  .seaBtn:hover, .seaBtn:focus {
+    background-color: #7ae4e1;
+    outline-color: #FFF; }
+  .seaBtn:active {
+    background-color: #7ae4e1; }
+
+.syrBtn {
+  background-color: #66cccc;
+  color: white; }
+  .syrBtn:hover, .syrBtn:focus {
+    background-color: #7ae4e1;
+    outline-color: #FFF; }
+  .syrBtn:active {
+    background-color: #7ae4e1; }
+
+/*# sourceMappingURL=styles.css.map */
