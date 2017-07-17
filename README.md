@@ -3,9 +3,9 @@
 
 [View My Weather API Demo](https://designwithwhit.github.io/MyWeatherAPI/)
 
--User can opt to let the browser know thier location
--Or- User can check the weather of Seattle of Syracuse
--Below are graphics that will be displayed depending on the weather description
+User can opt to let the browser know thier location
+-Or- User can check the weather of Seattle of Syracuse <br>
+Below are graphics that will be displayed depending on the weather description <br>
 
 ### **Clear Sky**<br>
 ![Alt text](/images/phone-clear-sky.jpg "Clear Sky")
