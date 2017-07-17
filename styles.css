@@ -18,7 +18,7 @@ ul {
   padding: 0;
   text-align: center; }
 
-.city-name {
+.intro, .city-name {
   font-size: 2em;
   text-align: center;
   font-family: 'Roboto Slab', serif; }
@@ -56,7 +56,7 @@ weather {
     background-position: 0 0; }
   to {
     background-position: 100% 0; } }
-.animate-area {
+#animate-area {
   width: 100%;
   height: 500px;
   background-position: 0px 0px;
@@ -97,7 +97,7 @@ weather {
   background-color: #efefef; }
 
 button {
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Roboto', sans-serif;
   border-radius: 5px;
   color: #ffffff;
@@ -119,7 +119,7 @@ button {
     background-color: #fb283f; }
 
 .seaBtn {
-  background-color: #66cccc;
+  background-color: #9369bf;
   color: white; }
   .seaBtn:hover, .seaBtn:focus {
     background-color: #7ae4e1;
@@ -128,7 +128,7 @@ button {
     background-color: #7ae4e1; }
 
 .syrBtn {
-  background-color: #66cccc;
+  background-color: #9369bf;
   color: white; }
   .syrBtn:hover, .syrBtn:focus {
     background-color: #7ae4e1;

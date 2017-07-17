@@ -79,7 +79,7 @@ const resp = JSON.parse(this.response)
     list.appendChild(item4).setAttribute("class", "high-temp");
     list.appendChild(item5).setAttribute("class", "low-temp");
     cont.appendChild(list);
-    changeColor();
+    changeColor(item2.innerHTML);
 
 }
 
@@ -116,53 +116,46 @@ function geolocError() {
 //function changes the css background color depending
 // the weather.description
 //******************************
-
-
-function changeColor() {
+function changeColor(myWeaDesc) {
   console.log("changeColor is firing")
   $("li.wea-desc").each(function() {
-    switch ($(this).html()) {
+    switch (myWeaDesc) {
       case ("clear sky"):
         $('body').css("background-color","#7EC0EE");
-        $("weather").addClass("clear-sky");
+        $("weather").attr("class","clear-sky");
         break;
       case ("few clouds"):
         $('body').css("background-color","#ADD8E6");
-        $("weather").addClass("few-clouds");
+        $("weather").attr("class","few-clouds");
         break;
       case ("overcast clouds"):
         $('body').css("background-color","#b3cbd1");
-        $("weather").addClass("cloudy");
+        $("weather").attr("class","cloudy");
         break;
       case ("scattered clouds"):
-        $('body').css("background-color","#b3cbd1");
-        $("weather").addClass("scattered-clouds");
-        break;
       case ("broken clouds"):
         $('body').css("background-color","#b3cbd1");
-         $("weather").addClass("scattered-clouds");
+        $("weather").attr("class","scattered-clouds");
         break;
       case ("shower rain"):
-        $('body').css("background-color","#B0C4DE");
-        $("weather").addClass("rain");
-        break;
+      case ("light rain"):
       case ("rain"):
         $('body').css("background-color","#B0C4DE");
-        $("weather").addClass("rain");
+        $("weather").attr("class","rain");
         break;
       case ("thunderstorm"):
         $('body').css("background-color","#999999");
-        $("weather").addClass("thunder");
+        $("weather").attr("class","thunder");
         break;
       case ("snow"):
         $('body').css("background-color","#efefef");
         $('ul').css("color","#666");
-        $("weather").addClass("snow");
+        $("weather").attr("class","snow");
         break;
       case ("mist"):
         $('body').css("background-color","#e2e2e2");
         $('ul').css("color","#666");
-        $("weather").addClass("mist");
+        $("weather").attr("class","mist");
         break;
       default:
         console.log("oops");
