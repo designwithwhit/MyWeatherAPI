@@ -3,7 +3,7 @@
 
 [View My Weather API Demo](https://designwithwhit.github.io/MyWeatherAPI/)
 
-User can opt to let the browser know thier location
+User can opt to let the browser know their location
 -Or- User can check the weather of Seattle of Syracuse <br>
 Below are graphics that will be displayed depending on the weather description <br>
 
