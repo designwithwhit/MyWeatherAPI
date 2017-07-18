@@ -39,9 +39,11 @@ button.seaBtn, button.syrBtn {
   width: 49.5%;
   display: inline; }
 
-@media only screen and (max-width: 420px) {
-  button.seaBtn, button.syrBtn {
-    width: 100%; } }
+  @media only screen and (max-width: 420px) {
+   button.myGeoBtn, button.seaBtn, button.syrBtn{width:32%;display:inline;}
+    .hide{display:none;}
+  }
+  
 weather {
   display: block; }
 
