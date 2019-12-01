@@ -7,7 +7,7 @@ User can opt to let the browser know their location
 -Or- User can check the weather of Seattle of Syracuse <br>
 Below are graphics that will be displayed depending on the weather description <br>
 
-[OpenWeatherMap.org API] (https://openweathermap.org/api)
+[OpenWeatherMap.org API](https://openweathermap.org/api)
 
 ### **Clear Sky**<br>
 ![Alt text](/images/phone-clear-sky.jpg "Clear Sky")
